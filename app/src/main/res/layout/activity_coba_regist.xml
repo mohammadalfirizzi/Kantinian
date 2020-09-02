@@ -1,0 +1,272 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logob"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txt_hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/putih"
+                android:textSize="20dp"/>
+            <ImageView
+                android:id="@+id/gmbrkantiniannb"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/kantianid"
+                android:layout_below="@+id/logob"
+                android:layout_centerHorizontal="true" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="20dp"
+                android:layout_below="@+id/gmbrkantiniannb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:text="Anak"
+                        android:textColor="#000"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/nisn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan NISN" />
+
+                    <EditText
+                        android:id="@+id/anak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan Nama Anak" />
+
+                    <TextView
+                        android:id="@+id/namajenis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Masukkan Jenis kelamin"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/edt_jk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/lk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laki - laki"
+                            android:textSize="20sp" />
+
+                        <RadioButton
+                            android:id="@+id/pr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perempuan"
+                            android:textSize="20sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Sekolah :"
+                        android:textSize="20dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_pendidikan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/namajeniskelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Masukkan Kelas"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/kelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/kelas1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="7"
+                            android:textSize="20sp" />
+
+                        <RadioButton
+                            android:id="@+id/kelas2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="8"
+                            android:textSize="20sp" />
+
+                        <RadioButton
+                            android:id="@+id/kelas3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="9"
+                            android:textSize="20sp" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:inputType="numberPassword"
+                        android:id="@+id/pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan PIN" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:text="Orang Tua"
+                        android:textColor="#000"
+                        android:textSize="26sp" />
+
+                    <EditText
+                        android:id="@+id/namaortu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan Nama Anda" />
+                    <TextView
+                        android:id="@+id/namajenis2"
+                        android:textSize="20sp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masukkan Jenis kelamin"/>
+
+                    <RadioGroup
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/edt_jk_ortu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/lk2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laki - laki"
+                            android:textSize="20sp" />
+
+                        <RadioButton
+                            android:id="@+id/pr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perempuan"
+                            android:textSize="20sp" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/emailortu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan Email Anda" />
+
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/nomorortu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan Nomor Anda" />
+
+                    <EditText
+                        android:inputType="numberPassword"
+                        android:id="@+id/passwordortu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan Password Anda" />
+
+                    <EditText
+                        android:inputType="numberPassword"
+                        android:id="@+id/passwordortu2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="Masukkan Password Anda Lagi" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_margin="20dp"
+                android:layout_below="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_insertdata"
+                android:text="Daftar Sekarang"
+                android:textColor="@color/putih"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

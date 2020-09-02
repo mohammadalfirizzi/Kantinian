@@ -1,0 +1,214 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/logob"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/putih"
+        android:textSize="20dp"/>
+    <ImageView
+        android:id="@+id/gmbrkantiniannb"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/kantianid"
+        android:layout_below="@+id/logob"
+        android:layout_centerHorizontal="true" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/gmbrkantiniannb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="serif-monospace"
+        android:text="Tambahkan Akun Anak"
+        android:textColor="#000"
+        android:textSize="26sp" />
+
+    <EditText
+        android:hint="CEK NPSN Sekolah"
+        android:inputType="numberDecimal"
+        android:id="@+id/nisn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+<Button
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cek"
+    android:text="CEK"
+    android:textColor="@color/putih"
+    android:background="@drawable/custom_button_login"/>
+        <EditText
+            android:textAlignment="center"
+            android:editable="false"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ceksekolah"
+            android:hint="Sekolah Anak Anda"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <EditText
+            android:hint="Masukkan Nama Anak Anda"
+            android:inputType="text"
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+
+        <TextView
+            android:id="@+id/namajenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Masukkan Jenis kelamin"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_marginLeft="20dp"
+            android:id="@+id/edt_jk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/lk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki - laki"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/namajeniskelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Masukkan Kelas"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/kelas1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/kelas2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="2"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/kelas3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="3"
+                android:textSize="20sp" />
+        </RadioGroup>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Kode Keamanan"
+            android:textSize="20dp" />
+        <EditText
+            android:ems="15"
+            android:password="true"
+            android:hint="Masukkan PIN Anak"
+            android:inputType="phone"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:hint="Masukkan PIN Anak sekali lagi"
+            android:ems="15"
+            android:password="true"
+            android:inputType="phone"
+            android:id="@+id/c_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_margin="20dp"
+                android:layout_below="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_insertdata"
+                android:text="Daftar Sekarang"
+                android:textColor="@color/putih"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_button_login"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

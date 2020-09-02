@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="kata">Anda dapat memasukkan nominal Top Up yang anda inginkan dengan cara menekan button pilihan nominal atau bisa juga dengan input sesuai nominal yang anda inginkan.
+    </string>
+    <string name="title_activity_tambah_anak">TambahAnak</string>
+</resources>

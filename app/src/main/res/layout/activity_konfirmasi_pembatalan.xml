@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/pengaturanupload"
+                android:layout_margin="20dp"
+                android:background="@drawable/kembali"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_alignTop="@+id/pengaturanupload"
+                android:layout_toEndOf="@+id/pengaturanupload"
+                android:text="Konfirmasi Pembatalan"
+                android:textSize="16sp"
+                android:textColor="#F00"/>
+
+            <TextView
+                android:id="@+id/rincian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pengaturanupload"
+                android:layout_below="@+id/pengaturanupload"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:text="Rincian" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#dcdddd"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="0dp"
+                android:id="@+id/kotakan2"
+                android:layout_below="@id/rincian">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/texttopup"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/merahh"
+                        android:text="ID TOP UP 2103923113"/>
+                    <TextView
+                        android:id="@+id/textuang"
+                        android:textColor="#000"
+                        android:layout_margin="10dp"
+                        android:text="Rp 100.000,-"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#f8f7f8"
+                app:cardElevation="0dp"
+                android:id="@+id/kotakan"
+                android:layout_marginBottom="20dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/kotakan2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/mandiri"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/mandiri" />
+
+                    <TextView
+                        android:id="@+id/trftext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_toEndOf="@id/mandiri"
+                        android:text="Transfer Via Bank"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignStart="@+id/mandiri"
+                        android:layout_below="@+id/mandiri"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/custom_buttonmerah"
+                        android:text="Menunggu Pembayaran"
+                        android:textAllCaps="false"
+                        android:textColor="@color/putih"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/waktutersisa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/button6"
+                        android:layout_alignBottom="@+id/button6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Waktu Tersisa 12:12:00"
+                        android:textColor="@color/merahh"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/waktutersisa"
+                        android:layout_below="@+id/button6"
+                        android:text="2019-11-18"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/haa"
+                android:hint="sadsdaasdsadadsdas"/>
+
+            <TextView
+                android:id="@+id/uploadstruk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/kotakan"
+                android:layout_below="@+id/kotakan"
+                android:text="Silakan Baca Syarat dan Ketentuan"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btn_batal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btntidak"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_buttonmerah"
+                android:text="Ya, Batalkan Top up"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidak"
+                android:textColor="@color/merahh"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/custom_button"
+                android:id="@+id/btntidak"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

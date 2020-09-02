@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HubungiKami">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/pengaturanhubungikami"
+        android:layout_margin="20dp"
+        android:background="@drawable/kembali"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_alignTop="@+id/pengaturanhubungikami"
+        android:layout_toEndOf="@+id/pengaturanhubungikami"
+        android:text="Hubungi Kami"
+        android:textSize="16sp"
+        android:textColor="#F00"/>
+    <ImageView
+        android:layout_below="@id/pengaturanhubungikami"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/gambarr"
+        android:background="@drawable/bgupload"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hubungikami"
+        android:text="Hubungi Kami"
+        android:layout_below="@id/gambarr"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kantiniaid"
+        android:layout_below="@id/hubungikami"
+        android:layout_centerHorizontal="true"
+        android:text="Kantinian.id Indonesia"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/merahh"/>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hubungicustomer"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/kantiniaid"
+        android:textAlignment="center"
+        android:text="Hubungi nomor customer kami,atau email ke kantinsekolah@kantinian.id apabila anda membutuhkan bantuan"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout1"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/hubungicustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lokasi" />
+
+        <TextView
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kantinsekolah@kantinian.id" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lokasi" />
+
+        <TextView
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="085232689830" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lokasi" />
+
+        <TextView
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gedung TC Lantai 3,
+Jl. Raya ITS, Keputih, Sukolilo,
+Kota Surabaya, 67111" />
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

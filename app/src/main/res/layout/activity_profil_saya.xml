@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilSaya">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="25dp"
+               android:layout_centerHorizontal="true"
+               android:layout_width="300dp"
+               android:layout_height="35dp"
+               android:id="@+id/profilcard1"
+               android:layout_below="@id/sma"
+               app:cardBackgroundColor="@color/merahh">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Data Akun"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:layout_margin="5dp"
+                   android:textColor="@color/putih"/>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               app:cardBackgroundColor="#f8f7f8"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/profilcard2"
+                android:layout_below="@id/profilcard1"
+                android:layout_centerHorizontal="true">
+               <ImageView
+                   android:layout_margin="5dp"
+                   android:id="@+id/gbremail"
+                   android:layout_width="30dp"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/profil_emaill"/>
+               <TextView
+                   android:id="@+id/txtemail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="45dp"
+                   android:text=""
+                   android:textSize="16sp" />
+           </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#f8f7f8"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/profilcard3"
+                android:layout_below="@id/profilcard2"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/gbrtelp"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_telp"/>
+                <TextView
+                    android:id="@+id/txtnomor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_toEndOf="@+id/pengaturanprofilsaya"
+                    android:text=""
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#f8f7f8"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/profilcard"
+                android:layout_below="@id/profilcard3"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/gbrtelp2"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_telp"/>
+                <TextView
+                    android:id="@+id/txtnomor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_toEndOf="@+id/pengaturanprofilsaya"
+                    android:text=""
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/pengaturanprofilsaya"
+                android:layout_margin="20dp"
+                android:background="@drawable/kembali"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_alignTop="@+id/pengaturanprofilsaya"
+                android:layout_toEndOf="@+id/pengaturanprofilsaya"
+                android:text="Profil Saya"
+                android:textSize="20sp"
+                android:textColor="#F00"
+                android:id="@+id/textView2" />
+
+            <ImageView
+                android:layout_below="@id/pengaturanprofilsaya"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/profilgambar"
+                android:background="@drawable/avatar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:layout_below="@id/profilgambar"
+                android:id="@+id/nama"
+                android:text=""
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:layout_below="@id/nama"
+                android:text=""
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:id="@+id/sma"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idcustomer"
+                android:layout_margin="10dp"
+                android:text="id_customer"
+                android:layout_below="@id/profilcard"/>
+
+            <ImageButton
+                android:id="@+id/editprofil"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignStart="@+id/profilcard"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/editprofil" />
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

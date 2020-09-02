@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Topup">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/pengaturantopup"
+        android:layout_margin="20dp"
+        android:background="@drawable/kembali"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_alignTop="@+id/pengaturantopup"
+        android:layout_toEndOf="@+id/pengaturantopup"
+        android:text="Top Up"
+        android:textSize="16sp"
+        android:textColor="#F00"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/logotopup"
+        android:src="@drawable/topup_topup"
+        android:layout_below="@id/pengaturantopup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/harga"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/logotopup"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notif"
+        android:text=""
+        android:layout_below="@id/harga"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saldosaya"
+        android:text="Saldo Saya"
+        android:layout_below="@id/harga"
+        android:textSize="18sp"
+        android:textColor="#F00"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/topvia2"
+        android:layout_below="@id/saldosaya"
+        app:cardBackgroundColor="@color/merahh">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Top Up Via"
+            android:textColor="@color/putih"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/topvia3"
+        android:layout_below="@id/topvia2"
+        app:cardBackgroundColor="#f8f7f8"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/tfbank"
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logotf" />
+
+            <TextView
+                android:textColor="@color/merahh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="144dp"
+                android:layout_marginBottom="36dp"
+                android:text="Transfer Bank" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="10dp"
+                android:text="120000101010" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/topvia"
+        android:layout_below="@id/topvia3"
+        app:cardBackgroundColor="#f8f7f8"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logokeuangan" />
+
+            <TextView
+                android:textColor="@color/merahh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="36dp"
+                android:text="Keuangan Sekolah" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="31dp"
+                android:id="@+id/sekolah"
+                android:layout_marginBottom="10dp"
+                android:text="" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_customer"
+        android:text="id_customer"
+        android:layout_below="@id/topvia"/>
+
+</RelativeLayout>

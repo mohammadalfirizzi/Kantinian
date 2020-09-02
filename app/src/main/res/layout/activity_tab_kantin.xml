@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabKantin">
+    <ImageButton
+        android:id="@+id/pengaturanrtrfd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/kembali" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pengaturanrtrfd"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/pengaturanrtrfd"
+        android:text="Riwayat Transaksi"
+        android:textColor="#F00"
+        android:textSize="16sp"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iniadalah"
+        android:layout_below="@id/textView"
+        android:text="Ini adalah halaman Riwayat Transaksi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iniadalahh"
+        android:layout_below="@id/iniadalah"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Semua Jenis Transaksi dan Topup yang telah dilakukan"/>
+    <TabHost
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/iniadalahh"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:layout_width="match_parent"
+                android:id="@android:id/tabs"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent"/>
+
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

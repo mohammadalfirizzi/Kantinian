@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/gmbrkantiniann"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/logo"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/kantianid" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_toEndOf="@+id/gambaruser"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/gmbrkantiniann"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:orientation="vertical"
+        android:id="@+id/username">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernamee"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/username"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="22dp"
+            android:background="@color/putih"
+            android:hint="Nomor Telepon"
+            android:ems="15"
+            android:inputType="numberDecimal">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:id="@+id/gambaruser"
+        android:src="@drawable/custom_user"
+        android:layout_below="@+id/gmbrkantiniann"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_toEndOf="@+id/gambarpass"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        android:orientation="vertical"
+        android:id="@+id/password">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordd"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/username"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="22dp"
+            android:background="@color/putih"
+            android:hint="Password"
+            android:ems="15"
+            android:password="true"
+            android:inputType="phone">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:id="@+id/gambarpass"
+        android:src="@drawable/custom_pass"
+        android:layout_below="@+id/username"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="@color/putih"
+        android:textSize="16sp"
+        android:checked="false"
+        android:text="Simpan User ID"
+        android:textColor="@color/putih" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_login"
+        android:id="@+id/btnlogin"
+        android:textColor="@color/putih"
+        android:text="Login" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_login"
+        android:id="@+id/btnregist"
+        android:textColor="@color/putih"
+        android:text="Register" />
+    <Button
+        android:text="Lupa User ID"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="@color/putih"
+        android:textStyle="bold"
+        android:id="@+id/lupaid"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/btnregist"
+        android:layout_below="@+id/btnregist"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/custom_button_login2" />
+
+    <Button
+        android:text="Lupa Password"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="@color/putih"
+        android:textStyle="bold"
+        android:id="@+id/lupapas"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/lupaid"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/lupaid"
+        android:background="@drawable/custom_button_login2" />
+
+</RelativeLayout>

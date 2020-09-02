@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#d3d3d3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/texttopup2"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/merahh"
+                android:text="TOP UP"/>
+            <TextView
+                android:id="@+id/texttopup3"
+                android:textColor="#FFF"
+                android:layout_margin="10dp"
+                android:text="ID TOP UP 21000129"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="40dp"
+        app:cardBackgroundColor="#e9e9e9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/isi"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button61"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="12dp"
+                android:text="MCM InHouse sdanjasdnjdas"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button61"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/isi"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_buttonhijau"
+                android:text="Transaksi Berhasil"
+                android:textAllCaps="false"
+                android:textColor="@color/putih"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/uanghijau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/isi"
+                android:layout_marginEnd="20dp"
+                android:text="+ 100.000,-"
+                android:textColor="#2eb645"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="80dp"
+                android:text="12:12:00"
+                android:textColor="@color/merahh"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:text="2019-11-18"
+                android:textSize="8sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Kantinian"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <activity android:name=".RegistOrtudua"></activity>
+        <activity android:name=".RegistOrtu" />
+        <activity android:name=".TambahAnak" />
+        <activity android:name=".konfirmasi_pembatalan" />
+        <activity android:name=".ubahpindua" />
+        <activity android:name=".ubahpin" />
+        <activity android:name=".RiwayatTransaksiSelesai" />
+        <activity android:name=".RiwayatTransaksi" />
+        <activity android:name=".UploadBukti" />
+        <activity android:name=".Transferdua" />
+        <activity android:name=".Editprofil" />
+        <activity android:name=".TabKantin" />
+        <activity android:name=".Topup" />
+        <activity android:name=".ProfilSaya" />
+        <activity android:name=".transfer" />
+        <activity android:name=".LimitTransaksi" />
+        <activity android:name=".HubungiKami" />
+        <activity android:name=".Faq" />
+        <activity android:name=".ubahpinpass" />
+        <activity android:name=".CobaRegist" />
+        <activity android:name=".Sliding" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

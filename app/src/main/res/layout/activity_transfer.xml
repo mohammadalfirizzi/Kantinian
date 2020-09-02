@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transfer">
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/pengaturantrf"
+        android:layout_margin="20dp"
+        android:background="@drawable/kembali"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_alignTop="@+id/pengaturantrf"
+        android:layout_toEndOf="@+id/pengaturantrf"
+        android:text="Transfer Bank"
+        android:textSize="16sp"
+        android:textColor="#F00"/>
+    <Button
+        android:layout_marginLeft="100dp"
+        android:layout_width="30dp"
+        android:text="1"
+        android:textColor="@color/putih"
+        android:layout_height="30dp"
+        android:id="@+id/satu"
+        android:background="@drawable/custom_lingkaran"
+        android:layout_below="@id/pengaturantrf"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tfkata"
+        android:text="Transfer Bank"
+        android:layout_below="@id/pengaturantrf"
+        android:layout_toEndOf="@id/satu"
+        android:layout_margin="5dp"
+        android:textColor="#000"/>
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_width="30dp"
+        android:text="2"
+        android:textColor="@color/putih"
+        android:layout_height="30dp"
+        android:id="@+id/dua"
+        android:layout_toEndOf="@id/tfkata"
+        android:background="@drawable/custom_lingkarandua"
+        android:layout_below="@id/pengaturantrf"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tfkataa"
+        android:text="Bayar"
+        android:layout_below="@id/pengaturantrf"
+        android:layout_toEndOf="@id/dua"
+        android:layout_margin="5dp"
+        android:textColor="#fbddde"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/satu"
+        android:id="@+id/kartu"
+        android:background="@drawable/kartu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texttrf"
+        android:layout_below="@id/kartu"
+        android:layout_centerHorizontal="true"
+        android:text="Transfer Bank Via Mandiri"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/nominal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/texttrf"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/gambaruser"
+        android:background="@drawable/edit_edit_text"
+        android:editable="false"
+        android:focusable="false"
+        android:text="10000" />
+
+    <ImageView
+        android:id="@+id/gambaruser"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/texttrf"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/rp" />
+
+    <Button
+        android:clickable="true"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="10.000"
+        android:textColor="@color/putih"
+        android:layout_below="@id/nominal"
+        android:background="@drawable/custom_buttonmerah"
+        android:id="@+id/sepuluh"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/duapuluh"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/texttrf"
+        android:layout_below="@+id/nominal"
+        android:background="@drawable/custom_button"
+        android:text="20.000"
+        android:textColor="@color/merahh" />
+    <Button
+        android:id="@+id/dualima"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/duapuluh"
+        android:layout_toEndOf="@+id/duapuluh"
+        android:background="@drawable/custom_button"
+        android:text="25.000"
+        android:textColor="@color/merahh" />
+
+    <Button
+        android:id="@+id/limapuluh"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/sepuluh"
+        android:layout_below="@+id/sepuluh"
+        android:background="@drawable/custom_button"
+        android:text="50.000"
+        android:textColor="@color/merahh" />
+
+    <Button
+        android:id="@+id/seratus"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/duapuluh"
+        android:layout_below="@+id/duapuluh"
+        android:background="@drawable/custom_button"
+        android:text="100.000"
+        android:textColor="@color/merahh" />
+
+    <Button
+        android:id="@+id/duaratus"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/seratus"
+        android:layout_toEndOf="@+id/duapuluh"
+        android:background="@drawable/custom_button"
+        android:text="200.000"
+        android:textColor="@color/merahh" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kata"
+        android:layout_below="@id/limapuluh"
+        android:text="@string/kata"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/kata2"
+        android:layout_below="@+id/kata"
+        android:text="Minimal Top Up Saldo adalah Rp. 10.000,-"/>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lanjutkan"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_button_edit"
+        android:text="lanjutkan"
+        android:textColor="@color/putih"/>
+
+</RelativeLayout>

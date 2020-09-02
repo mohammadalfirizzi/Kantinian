@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faq">
+
+    <ImageButton
+        android:id="@+id/pengaturanfaq"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/kembali" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pengaturanfaq"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/pengaturanfaq"
+        android:text="Bantuan"
+        android:textColor="#F00"
+        android:textSize="16sp"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/pengaturanfaq"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logofaq"
+        android:background="@drawable/logopentung"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textfaq"
+        android:text="FAQ"
+        android:layout_below="@id/logofaq"
+        android:textSize="26sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textkantinian"
+        android:text="Kantian.id Indonesia"
+        android:textColor="@color/merahh"
+        android:textSize="18sp"
+        android:layout_below="@id/textfaq"
+        android:layout_centerHorizontal="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview1"
+        android:layout_below="@id/textkantinian"/>
+</RelativeLayout>

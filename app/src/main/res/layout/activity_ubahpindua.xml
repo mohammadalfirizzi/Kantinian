@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ubahpindua">
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/pengaturanubahpass"
+        android:layout_margin="20dp"
+        android:background="@drawable/kembali"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_alignTop="@+id/pengaturanubahpass"
+        android:layout_toEndOf="@+id/pengaturanubahpass"
+        android:text="Ubah PIN"
+        android:textSize="16sp"
+        android:textColor="#F00"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="20dp"
+        android:layout_below="@id/pengaturanubahpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        android:id="@+id/saatinin">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#eee"
+            android:hint="Password Saat Ini"
+            android:drawableLeft="@drawable/custom_change_pin"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:id="@+id/saatini"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="20dp"
+        android:layout_below="@id/saatinin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        android:id="@+id/sekarangg">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:hint="Password Sekarang"
+            android:drawableLeft="@drawable/custom_change_pin"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:id="@+id/sekarang"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="20dp"
+        android:layout_below="@id/sekarangg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        android:id="@+id/konfirmm">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:hint="Konfirmasikan Password"
+            android:drawableLeft="@drawable/custom_change_pin"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:id="@+id/konfirm"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:layout_marginRight="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/simpan"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/konfirmm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/simpan" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_customer"
+        android:text="id_customer"
+        android:layout_below="@id/konfirmm"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kode_template"
+        android:text="kode_template"
+        android:layout_below="@id/id_customer"/>
+
+</RelativeLayout>
